@@ -129,4 +129,5 @@ LOGIN_REDIRECT_URL = 'blog-home'
 # settings.py
 LOGOUT_ON_GET = True
 LOGOUT_REDIRECT_URL = 'login' # Çıkış yapınca otomatik login sayfasına atar
+LOGIN_URL = 'login'
 

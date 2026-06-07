@@ -34,11 +34,18 @@
                 <!-- Navbar Right Side -->
                  <div class="navbar-nav">
                     {% if user.is_authenticated %}
+                        <form method="POST" action="{% url 'profile' %}" style="display: inline;">
+                            {% csrf_token %}                            
+                            <button  type="submit" class="btn btn-link nav-item nav-link" style="display: inline; cursor: pointer; padding: 0; margin-right: 10px; border: none; background: none; vertical-align: middle;">
+                                Profile
+                            </button>                            
+                        </form>
+
                         <form method="POST" action="{% url 'logout' %}" style="display: inline;">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-link nav-item nav-link" style="display: inline; cursor: pointer; padding: 0; margin: 0; border: none; background: none; vertical-align: middle;">
+                            {% csrf_token %}                           
+                            <button type="submit" class="btn btn-link nav-item nav-link" style="display: inline; cursor: pointer; padding: 0; margin: 3; border: none; background: none; vertical-align: middle;">
                                 Logout
-                            </button>
+                            </button>                            
                         </form>
                     {% else %}
                         <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
