@@ -8,6 +8,9 @@
             <div class="media-body">
                 <h2 class="account-heading">{{ user.username }}</h2>
                 <p class="text-secondary">{{ user.email }}</p>
+                <small class='text-muted ml-2'>
+                    <a href="{% url 'password_reset' %}">Forgot Password?</a>
+                </small>
             </div>
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
