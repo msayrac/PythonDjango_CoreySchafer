@@ -5,6 +5,7 @@
 * Database: SQLite (Development standard with relational design)
 * Frontend UI: HTML5, CSS3, Bootstrap 4
 * Form Layouts: Django Crispy Forms (with crispy-bootstrap4 engine)
+* Post List Create Api
 
 
 ## Core Features
@@ -21,5 +22,7 @@
 <img width="1581" height="703" alt="q5" src="https://github.com/user-attachments/assets/b7f4344a-d445-46e6-8805-3bd141e0024a" />
 <img width="1636" height="684" alt="q6" src="https://github.com/user-attachments/assets/26c4be4f-04ee-4479-a8a8-99bc193a9328" />
 <img width="1442" height="871" alt="q7" src="https://github.com/user-attachments/assets/5ed4e9ab-6f43-4c91-8cb7-11a259c57f2e" />
+<img width="995" height="865" alt="Ekran görüntüsü 2026-06-18 113748" src="https://github.com/user-attachments/assets/5c827c84-b4a5-4214-93a5-49ae4e037dde" />
+
 
 
