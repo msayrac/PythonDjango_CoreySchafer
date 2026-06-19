@@ -20,7 +20,7 @@ class PostListCreateAPIView(APIView):
             serializer.save(author=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-
+    
 class PostDetailAPIView(APIView):
     def get_object(self,pk):
         post_instance = get_object_or_404(Post, pk=pk)
